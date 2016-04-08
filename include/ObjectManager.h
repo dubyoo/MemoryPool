@@ -1,10 +1,10 @@
-#pragma once
+ï»¿#pragma once
 
 #include "StaticMemory.h"
 
 /** @class ObjectManager
-* ÊµÏÖÀûÓÃÄÚ´æ³Ø´´½¨¶ÔÏó
-* ÒªÇó¶ÔÏó¾ßÓĞÈ±Ê¡¹¹Ôìº¯Êı
+* å®ç°åˆ©ç”¨å†…å­˜æ± åˆ›å»ºå¯¹è±¡
+* è¦æ±‚å¯¹è±¡å…·æœ‰ç¼ºçœæ„é€ å‡½æ•°
 */
 
 template<typename T>

@@ -1,11 +1,11 @@
-#pragma once
+﻿#pragma once
 
 #include "MemoryChunk.h"  
 
 /** @ StaticMemory.h
-* ����ʵ���ڴ��
-* ���ù̶���С���Խ����ڴ���������
-* ���������С�ڴ���䵼�µ��ڴ���Ƭ����
+* 定义实现内存池
+* 采用固定大小策略进行内存管理与分配
+* 减少因大量小内存分配导致的内存碎片增加
 */
 
 class StaticMemory

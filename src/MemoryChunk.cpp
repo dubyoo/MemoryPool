@@ -1,4 +1,4 @@
-#include "MemoryChunk.h"
+ï»¿#include "MemoryChunk.h"
 
 
 /** @struct MemoryBlock
@@ -52,7 +52,7 @@ MemoryChunk::~MemoryChunk()
 		DeleteBlock(pBlock);
 		++tempcount;
 	}
-	assert(tempcount == count_);			// È·±£ÊÍ·ÅÍêÈ«£¨¿ÉÒÔ²é¿´ÊÇ·ñÓĞÄÚ´æĞ¹Â¶£©
+	assert(tempcount == count_);			// ç¡®ä¿é‡Šæ”¾å®Œå…¨ï¼ˆå¯ä»¥æŸ¥çœ‹æ˜¯å¦æœ‰å†…å­˜æ³„éœ²ï¼‰
 }
 
 void* MemoryChunk::malloc()

@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include <cstdio>
 #include <cassert>
@@ -26,8 +26,8 @@ protected:
 
 private:
 	MemoryBlock* pFreeList_;
-	size_t size_;			// Block´óĞ¡
-	int count_;				// BlockÊıÄ¿
+	size_t size_;			// Blockå¤§å°
+	int count_;				// Blockæ•°ç›®
 	MemoryChunk* pNext_;
 	std::mutex mutex_;
 };

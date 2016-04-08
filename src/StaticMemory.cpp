@@ -1,4 +1,4 @@
-#include "StaticMemory.h"
+ï»¿#include "StaticMemory.h"
 
 
 struct HeapHeader
@@ -40,12 +40,12 @@ void* StaticMemory::Malloc(size_t size)
 {
 	if (size > MAX_SIZE)
 	{
-		return malloc(size);		// ³¬¹ı×î´ósize£¬Ö±½ÓÊ¹ÓÃÏµÍ³mallocÉêÇë¿Õ¼ä
+		return malloc(size);		// è¶…è¿‡æœ€å¤§sizeï¼Œç›´æ¥ä½¿ç”¨ç³»ç»Ÿmallocç”³è¯·ç©ºé—´
 	}
 	int index = 0;
 	for (size_t tsize = MIN_SIZE; tsize <= MAX_SIZE; tsize *= 2)
 	{
-		if (tsize >= size)			// ÕÒµ½Ç¡ºÃÂú×ã¿Õ¼ä´óĞ¡µÄMemoryChunk
+		if (tsize >= size)			// æ‰¾åˆ°æ°å¥½æ»¡è¶³ç©ºé—´å¤§å°çš„MemoryChunk
 			break;
 		++index;
 	}
